@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+   <metadata minClientVersion="2.8.1">
+       <id>Plugin.HockeyApp</id>
+       <version>1.0.3</version>
+       <title>HockeyApp Plugin for Xamarin and Windows Phone</title>
+       <authors>Xavier Menodza</authors>
+       <owners>Xavier Mendoza</owners>
+       <licenseUrl>https://github.com/xmendoza/Xamarin.Plugins/blob/master/LICENSE</licenseUrl>
+       <projectUrl>https://github.com/xmendoza/Xamarin.Plugins</projectUrl>
+       <iconUrl>https://github.com/xmendoza/Xamarin.Plugins</iconUrl>
+       <requireLicenseAcceptance>false</requireLicenseAcceptance>
+       <description>
+         Xamarin and Windows Phone plugin to access HockeyApp features. 
+         Read the full documenation on the projects page.
+       </description>
+     <releaseNotes>
+       [1.0.3]
+       - fixes
+     </releaseNotes>
+       <summary>
+         Xamarin and Windows Phone plugin to access HockeyApp features.
+       </summary>
+       <tags>xamarin, xamarin.forms, android, ios, windows phone, hockeyapp</tags>
+   </metadata>
+   <files>
+     <!--Core-->
+     <file src="HockeyApp.Plugin.Abstractions\bin\Release\Plugin.HockeyApp.Abstractions.dll" target="lib\portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10\Plugin.HockeyApp.Abstractions.dll" />
+     <file src="HockeyApp.Plugin.Abstractions\bin\Release\Plugin.HockeyApp.Abstractions.pdb" target="lib\portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10\Plugin.HockeyApp.Abstractions.pdb" />
+     <file src="HockeyApp.Plugin\bin\Release\Plugin.HockeyApp.dll" target="lib\portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10\Plugin.HockeyApp.dll" />
+     <file src="HockeyApp.Plugin\bin\Release\Plugin.HockeyApp.pdb" target="lib\portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10\Plugin.HockeyApp.pdb" />
+
+
+
+     <!--Win Phone-->
+     <file src="HockeyApp.Plugin.Abstractions\bin\Release\Plugin.HockeyApp.Abstractions.dll" target="lib\wp8\Plugin.HockeyApp.Abstractions.dll" />
+     <file src="HockeyApp.Plugin.Abstractions\bin\Release\Plugin.HockeyApp.Abstractions.pdb" target="lib\wp8\Plugin.HockeyApp.Abstractions.pdb" />
+     <file src="HockeyApp.Plugin.WinPhone\bin\Release\Plugin.HockeyApp.dll" target="lib\wp8\Plugin.HockeyApp.dll" />
+     <file src="HockeyApp.Plugin.WinPhone\bin\Release\Plugin.HockeyApp.pdb" target="lib\wp8\Plugin.HockeyApp.pdb" />
+     
+     
+     <!--Xamarin.Android-->
+     <file src="HockeyApp.Plugin.Abstractions\bin\Release\Plugin.HockeyApp.Abstractions.dll" target="lib\MonoAndroid10\Plugin.HockeyApp.Abstractions.dll" />
+     <file src="HockeyApp.Plugin.Abstractions\bin\Release\Plugin.HockeyApp.Abstractions.pdb" target="lib\MonoAndroid10\Plugin.HockeyApp.Abstractions.pdb" />
+     <file src="HockeyApp.Plugin.Android\bin\Release\Plugin.HockeyApp.dll" target="lib\MonoAndroid10\Plugin.HockeyApp.dll" />
+     <file src="HockeyApp.Plugin.Android\bin\Release\Plugin.HockeyApp.pdb" target="lib\MonoAndroid10\Plugin.HockeyApp.pdb" />
+
+     <!--Xamarin.iOS-->
+     <file src="HockeyApp.Plugin.Abstractions\bin\Release\Plugin.HockeyApp.Abstractions.dll" target="lib\Xamarin.iOS10\Plugin.HockeyApp.Abstractions.dll" />
+     <file src="HockeyApp.Plugin.Abstractions\bin\Release\Plugin.HockeyApp.Abstractions.pdb" target="lib\Xamarin.iOS10\Plugin.HockeyApp.Abstractions.pdb" />
+     <file src="HockeyApp.Plugin.iOS\bin\iPhone\Release\Plugin.HockeyApp.dll" target="lib\Xamarin.iOS10\Plugin.HockeyApp.dll" />
+     
+     
+   </files>
+</package>
