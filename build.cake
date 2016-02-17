@@ -1,6 +1,7 @@
 #addin nuget:?package=Cake.AppVeyor
 #addin nuget:?package=Cake.Yaml
 #addin nuget:?package=Cake.FileHelpers
+#addin nuget:?package=Cake.Xamarin
 
 var TARGET = Argument ("target", Argument ("t", "Default"));
 
