@@ -10,6 +10,9 @@ var APPVEYOR_ACCOUNTNAME = EnvironmentVariable ("APPVEYOR_ACCOUNTNAME") ?? "xmen
 var APPVEYOR_PROJECTSLUG = EnvironmentVariable ("APPVEYOR_PROJECTSLUG") ?? "xamarin-plugins";
 var APPVEYOR_BUILD_NUMBER = EnvironmentVariable ("APPVEYOR_BUILD_NUMBER") ?? "9999";
 
+var XAMARIN_EMAIL = EnvironmentVariable ("XAMARIN_EMAIL") ?? "";
+var XAMARIN_PASSWORD = EnvironmentVariable ("XAMARIN_PASSWORD") ?? "";
+
 var COMMIT = EnvironmentVariable ("APPVEYOR_REPO_COMMIT") ?? "";
 var GIT_PATH = EnvironmentVariable ("GIT_EXE") ?? (IsRunningOnWindows () ? "git.exe" : "git");
 
@@ -72,5 +75,6 @@ Task ("Default").Does (() =>
 		}
 	}
 });
+
 
 RunTarget (TARGET);

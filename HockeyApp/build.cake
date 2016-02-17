@@ -44,7 +44,9 @@ Task ("Build").Does (() =>
 	});
 
 	RestoreComponents(sln, new XamarinComponentRestoreSettings {
-		ToolPath = GetXCToolPath ()
+		ToolPath = GetXCToolPath (),
+		Email = EnvironmentVariable ("XAMARIN_EMAIL"),
+		Password = EnvironmentVariable ("XAMARIN_PASSWORD")
 	});
 
 
