@@ -5,4 +5,4 @@
   BuildScript: ./HockeyApp/build.cake
   TriggerPaths: [ HockeyApp ]
   BuildTargets: [ NuGetPack ]
-  Version: 1.0.4
+  Version: 1.0.9
