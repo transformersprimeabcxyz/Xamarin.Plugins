@@ -1,0 +1,8 @@
+##############################################################
+# Lists all the sub-projects and their build scripts
+##############################################################
+- Name: HockeyApp
+  BuildScript: ./HockeyApp/build.cake
+  TriggerPaths: [ HockeyApp ]
+  BuildTargets: [ NuGetPack ]
+  Version: 1.0.4
