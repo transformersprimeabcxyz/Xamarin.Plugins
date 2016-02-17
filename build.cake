@@ -50,7 +50,7 @@ Task ("Default").Does (() =>
 {
 	var lastSuccessfulCommit = AppVeyorProjectLastSuccessfulBuild (
 		new AppVeyorSettings { ApiToken = APPVEYOR_APITOKEN },
-		"JamesMontemagno",
+		"xmendoza",
 		"xamarin-plugins",
 		null, null).Build.CommitId;
 
