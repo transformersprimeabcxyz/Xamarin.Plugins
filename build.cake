@@ -6,8 +6,8 @@
 var TARGET = Argument ("target", Argument ("t", "Default"));
 
 var APPVEYOR_APITOKEN = EnvironmentVariable ("APPVEYOR_APITOKEN") ?? "";
-var APPVEYOR_ACCOUNTNAME = EnvironmentVariable ("APPVEYOR_ACCOUNTNAME") ?? "xmendoza";
-var APPVEYOR_PROJECTSLUG = EnvironmentVariable ("APPVEYOR_PROJECTSLUG") ?? "xamarin-plugins";
+var APPVEYOR_ACCOUNT_NAME = EnvironmentVariable ("APPVEYOR_ACCOUNT_NAME") ?? "xmendoza";
+var APPVEYOR_PROJECT_SLUG = EnvironmentVariable ("APPVEYOR_PROJECT_SLUG") ?? "xamarin-plugins";
 var APPVEYOR_BUILD_NUMBER = EnvironmentVariable ("APPVEYOR_BUILD_NUMBER") ?? "9999";
 
 var XAMARIN_EMAIL = EnvironmentVariable ("XAMARIN_EMAIL") ?? "";
@@ -28,6 +28,8 @@ Func<FilePath> GetCakeToolPath = () =>
 	var p = System.Diagnostics.Process.GetCurrentProcess ();	
 	return new FilePath (p.Modules[0].FileName);
 };
+
+
 
 public class Project 
 {
